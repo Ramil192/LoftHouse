@@ -1,0 +1,10 @@
+@mixin mediaTablet {
+  @media screen and (max-width: $table) {
+    @content;
+  }
+}
+@mixin mediaTabletFooter {
+  @media screen and (max-width: $tableFooter) {
+    @content;
+  }
+}

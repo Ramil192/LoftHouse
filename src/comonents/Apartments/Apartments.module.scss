@@ -1,0 +1,122 @@
+@import '../../scss/base/vars';
+
+@keyframes onHoverAnimation {
+  0% {
+    background: linear-gradient(
+      180deg,
+      #242b33 0%,
+      rgba(36, 43, 51, 0) 0.01%,
+      #242b33 100%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      180deg,
+      #242b33 0%,
+      rgba(36, 43, 51, 0) 0.01%,
+      #242b33 150%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      180deg,
+      #242b33 0%,
+      rgba(36, 43, 51, 0) 0.01%,
+      #242b33 200%
+    );
+  }
+}
+
+.wrapper {
+  max-width: $container;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+
+  &::before {
+    content: 'III';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    transform: translate(-50%, 0px);
+
+    font-family: $font-PlayfairDisplay;
+    font-size: 400px;
+    line-height: 443px;
+    opacity: 0.02;
+  }
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 530px));
+  justify-content: center;
+  gap: 30px;
+
+  margin-top: 88px;
+
+  @include mediaTablet {
+    margin-top: 40px;
+  }
+}
+
+.item {
+  position: relative;
+
+  max-width: 540px;
+  max-height: 320px;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(
+      180deg,
+      #242b33 0%,
+      rgba(36, 43, 51, 0) 0.01%,
+      #242b33 100%
+    );
+
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  &:hover::before {
+    animation-name: onHoverAnimation;
+  }
+}
+
+.title {
+  margin-bottom: 88px;
+
+  font-family: $font-PlayfairDisplay;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: $accent;
+}
+
+.text {
+  position: absolute;
+  left: 50px;
+  bottom: 44px;
+
+  font-size: 24px;
+  line-height: 28px;
+
+  @include mediaTablet {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../scss/base/vars';
+
+.button {
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+
+  background-color: $accent;
+
+  &::placeholder {
+    color: $placeholder;
+  }
+
+  &:focus {
+    background-color: saturate($accent, 10%);
+  }
+}

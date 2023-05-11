@@ -1,0 +1,79 @@
+@import '../../scss/base/vars';
+
+.wrapper {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+
+  overflow: hidden;
+
+  &::before {
+    content: 'IV';
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: calc(50% + 555px);
+
+    transform: translate(-50%, 0%);
+
+    font-family: $font-PlayfairDisplay;
+    font-size: 400px;
+    line-height: 443px;
+    opacity: 0.02;
+  }
+}
+
+.container {
+  max-width: 720px;
+  height: 650px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px auto;
+
+  background: linear-gradient(
+      0deg,
+      rgba(36, 43, 51, 0.8),
+      rgba(36, 43, 51, 0.8)
+    ),
+    url('../../../public/img/video/bgPlay.jpg');
+
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(36, 43, 51, 0.3),
+        rgba(36, 43, 51, 0.3)
+      ),
+      url('../../../public/img/video/bgPlay.jpg');
+  }
+
+  @include mediaTablet {
+    height: 450px;
+  }
+}
+
+.play {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  @include mediaTablet {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.player {
+  position: absolute;
+}

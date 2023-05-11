@@ -1,0 +1,34 @@
+@import '../../scss/base/vars';
+
+.wrapper {
+  max-width: $container;
+
+  margin: 0 auto;
+  padding: 0px $mobile-padding 180px;
+
+  @include mediaTablet {
+    padding-bottom: 50px;
+  }
+}
+
+.text {
+  display: block;
+
+  margin-top: 17px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px 30px;
+
+  margin-top: 38px;
+}
+
+.textInfo {
+  margin-top: 11px;
+
+  font-size: 13px;
+  color: $textInfo;
+  text-align: center;
+}

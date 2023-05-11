@@ -1,0 +1,10 @@
+@import '../../scss/base/vars';
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-vertical {
+  flex-direction: column;
+}

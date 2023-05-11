@@ -1,0 +1,42 @@
+@import '../../scss/base/vars';
+
+.wrapper {
+  position: relative;
+
+  padding: 180px 0px;
+
+  &::before {
+    content: 'V';
+    position: absolute;
+    top: 0px;
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+
+    font-family: $font-PlayfairDisplay;
+    font-size: 400px;
+    line-height: 740px;
+    opacity: 0.02;
+  }
+
+  @include mediaTablet {
+    padding: 80px 0px;
+  }
+}
+
+.container {
+  max-width: $container;
+
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+}
+
+.map {
+  height: 358px;
+
+  margin-top: 88px;
+  background: #626262;
+
+  @include mediaTablet {
+    margin-top: 44px;
+  }
+}

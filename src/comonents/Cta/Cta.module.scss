@@ -1,0 +1,68 @@
+@import '../../scss/base/vars';
+
+.wrapper {
+  max-width: 1920px;
+
+  margin: 0 auto;
+  padding: 180px $mobile-padding;
+
+  background: linear-gradient(
+      180deg,
+      $dark 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      $dark 90.1%
+    ),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+    url('../../../public/img/Rectangle.jpg'), #c4c4c4;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: $container;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+
+  margin: 0 auto;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info {
+  max-width: 540px;
+
+  @include mediaTablet {
+    margin: 0px auto;
+
+    text-align: center;
+  }
+}
+
+.text {
+  display: block;
+
+  margin-top: 17px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 30px;
+
+  margin-top: 65px;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.textInfo {
+  margin-top: 11px;
+
+  font-size: 13px;
+  color: $textInfo;
+  text-align: center;
+}
