@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/LoftHouse/static/css/main.2ea28fb7.css",
-    "main.js": "/LoftHouse/static/js/main.c0b05b2a.js",
+    "main.js": "/LoftHouse/static/js/main.3bcec0e4.js",
     "static/media/Rectangle.jpg": "/LoftHouse/static/media/Rectangle.81bf326fae7961dfced2.jpg",
     "static/media/header-bg.jpg": "/LoftHouse/static/media/header-bg.bf5a72e662803a40c216.jpg",
     "static/media/bgPlay.jpg": "/LoftHouse/static/media/bgPlay.ac1853525dc12d6a9d34.jpg",
     "index.html": "/LoftHouse/index.html",
     "main.2ea28fb7.css.map": "/LoftHouse/static/css/main.2ea28fb7.css.map",
-    "main.c0b05b2a.js.map": "/LoftHouse/static/js/main.c0b05b2a.js.map"
+    "main.3bcec0e4.js.map": "/LoftHouse/static/js/main.3bcec0e4.js.map"
   },
   "entrypoints": [
     "static/css/main.2ea28fb7.css",
-    "static/js/main.c0b05b2a.js"
+    "static/js/main.3bcec0e4.js"
   ]
 }
