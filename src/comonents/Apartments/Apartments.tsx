@@ -14,7 +14,7 @@ const Apartments: FC<IProps> = ({ apartments }) => {
         {apartments.map((apartment, index) => (
           <li className={style.item} key={index}>
             <img
-              src={`/React-advanced/img/apartments/${apartment.img}.png`}
+              src={`/LoftHouse/img/apartments/${apartment.img}.png`}
               alt={apartment.img}
             />
             <span className={style.text}>{apartment.text}</span>

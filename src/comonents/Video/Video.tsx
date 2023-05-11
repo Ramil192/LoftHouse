@@ -13,7 +13,7 @@ const Video: FC = () => {
     <section className={style.wrapper}>
       <div className={style.container}>
         <button className={style.play} onClick={changeShow}>
-          <img src="/React-advanced/img/video/play.svg" alt="play icon" />
+          <img src="/LoftHouse/img/video/play.svg" alt="play icon" />
         </button>
         {isShow && (
           <ReactPlayer

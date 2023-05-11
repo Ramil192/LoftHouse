@@ -57,7 +57,7 @@ const Footer: FC<IProps> = ({ social }) => {
                 <li key={index}>
                   <a href={social.href}>
                     <img
-                      src={`/React-advanced/img/footer/${social.svg}.svg`}
+                      src={`/LoftHouse/img/footer/${social.svg}.svg`}
                       alt={social.svg}
                     />
                   </a>

@@ -41,18 +41,18 @@ const Header: FC = () => {
             Жилой комплекс <br />в историческом центре
           </h1>
           <a href="#!">
-            <img src="/React-advanced/img/header/mouse.svg" alt="scroll down" />
+            <img src="/LoftHouse/img/header/mouse.svg" alt="scroll down" />
           </a>
         </div>
 
         <div className={style.footer}>
           <a href="#section-map" className={style.link}>
-            <img src="/React-advanced/img/header/map.svg" alt="map icon" /> Наб.
-            реки Фонтанки 10-15
+            <img src="/LoftHouse/img/header/map.svg" alt="map icon" /> Наб. реки
+            Фонтанки 10-15
           </a>
           <a href="tel:+78121234567" className={style.link}>
-            <img src="/React-advanced/img/header/phone.svg" alt="phone icon" />{' '}
-            8 (812) 123-45-67
+            <img src="/LoftHouse/img/header/phone.svg" alt="phone icon" /> 8
+            (812) 123-45-67
           </a>
         </div>
       </div>

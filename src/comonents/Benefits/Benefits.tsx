@@ -12,7 +12,7 @@ const Benefits: FC<IProps> = ({ benefits }) => {
         {benefits.map((benefit, index) => (
           <li className={style.item} key={index}>
             <img
-              src={`/React-advanced/img/benefits/${benefit.svg}.svg`}
+              src={`/LoftHouse/img/benefits/${benefit.svg}.svg`}
               alt={benefit.svg}
             />
             <span>{benefit.text}</span>
